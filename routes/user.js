@@ -5,11 +5,10 @@ const router = express.Router();
 
 router.post('/signup', signup)
 router.post('/signin', signin)
-router.post('/filteruser', filteruser)
 router.get('/getuser', getuser)
 router.get('/getuser/:_id', getuserbyId)
 router.patch('/updateuser/:_id', updateuser)
 router.delete('/deleteuser/:_id', deleteuser)
-
+router.post('/filteruser', filteruser)
 
 export default router;

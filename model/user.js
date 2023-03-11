@@ -2,7 +2,11 @@ import mongoose from "mongoose";
 import validator from 'validator';
 
 const userSchema = mongoose.Schema({
-    name: {
+    firstname: {
+        type: String,
+        required: true
+    },
+    lastname: {
         type: String,
         required: true
     },
