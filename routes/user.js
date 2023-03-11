@@ -1,10 +1,11 @@
 import express, { Router } from "express";
-import { signup, signin, updateuser, deleteuser, getuser, getuserbyId } from "../controller/UserController.js";
+import { signup, signin, updateuser, deleteuser, getuser, getuserbyId, filteruser } from "../controller/UserController.js";
 const router = express.Router();
 
 
 router.post('/signup', signup)
 router.post('/signin', signin)
+router.post('/filteruser', filteruser)
 router.get('/getuser', getuser)
 router.get('/getuser/:_id', getuserbyId)
 router.patch('/updateuser/:_id', updateuser)
